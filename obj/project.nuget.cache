@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b3+v90xLJyo8yros7wFceQW6EVLp4lZyLY2EOmNGW3IAnV+CVXFGYQyYMEpgKyG49jZ0FH2ByQBFILF7Y74kYw==",
+  "dgSpecHash": "gHuQ4EpYk1nc9UafJ9TTzhEfLQhHBZzftPfQ3ZG7OlW12zLcSN/WZKyOExGQ3Js2XjXg/CgQKYOh7LLADpP8OQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\Marc2-ASP-NET-CORE\\Marc2.csproj",
+  "projectFilePath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\pzpi-19-3-seleych-oleksii-lab2\\Marc2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Алексей\\.nuget\\packages\\certificatemanager\\1.0.8\\certificatemanager.1.0.8.nupkg.sha512",
     "C:\\Users\\Алексей\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

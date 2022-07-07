@@ -2358,11 +2358,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\Marc2-ASP-NET-CORE\\Marc2.csproj",
+      "projectUniqueName": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\pzpi-19-3-seleych-oleksii-lab2\\Marc2.csproj",
       "projectName": "Marc2",
-      "projectPath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\Marc2-ASP-NET-CORE\\Marc2.csproj",
+      "projectPath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\pzpi-19-3-seleych-oleksii-lab2\\Marc2.csproj",
       "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\Marc2-ASP-NET-CORE\\obj\\",
+      "outputPath": "C:\\Users\\Алексей\\Desktop\\Marc4_Clone\\pzpi-19-3-seleych-oleksii-lab2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",

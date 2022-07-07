@@ -161,10 +161,5 @@ namespace Marc2.Services
             _repository.IssueRepository.UpdateIssue(issue);
             await _repository.UnitOfWork.SaveChangesAsync();
         }
-
-        public Task<IEnumerable<ResquerIssueDto>> GetResquerIssuesAsync(string userEmail)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -9,6 +9,5 @@ namespace Marc2.Services.Abstractions
         Task DeleteIssueAsync(int issueId, string userEmail);
         Task<IEnumerable<IssueDto>> GetAllIssuesByAccident(int accidentId, string userEmail);
         Task ChangeIssueStatusAsync(int issueId, bool completenessStatus, string userEmail);
-        Task<IEnumerable<ResquerIssueDto>> GetResquerIssuesAsync(string userEmail);
     }
 }

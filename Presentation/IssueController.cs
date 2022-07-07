@@ -1,5 +1,6 @@
 ﻿using Marc2.Contracts.Issue;
 using Marc2.Services.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -24,6 +25,7 @@ namespace Marc2.Presentation
         }
 
         [HttpGet]
+        [Authorize(Roles = "Dispatcher")]
         public async Task<IActionResult> GetAllIssuesByAccident(int accidentId)
         {
             var userEmail = RetriveEmailFromHttpContext();
@@ -32,6 +34,7 @@ namespace Marc2.Presentation
         }
 
         [HttpPost]
+        [Authorize(Roles = "Dispatcher")]
         public async Task<IActionResult> CreateIssue([FromBody] CreateIssueDto createIssueDto)
         {
             var userEmail = RetriveEmailFromHttpContext();
@@ -40,6 +43,7 @@ namespace Marc2.Presentation
         }
 
         [HttpPut("{issueId:int}")]
+        [Authorize(Roles = "Dispatcher")]
         public async Task<IActionResult> UpdateIssue(int issueId, [FromBody] UpdateIssueDto updateIssueDto)
         {
             var userEmail = RetriveEmailFromHttpContext();
@@ -48,6 +52,7 @@ namespace Marc2.Presentation
         }
 
         [HttpPut("changeStatus/{issueId:int}")]
+        [Authorize(Roles = "Resquer")]
         public async Task<IActionResult> ChangeIssueStatus(int issueId, [FromBody] bool completenessStatus)
         {
             var userEmail = RetriveEmailFromHttpContext();
@@ -56,6 +61,7 @@ namespace Marc2.Presentation
         }
 
         [HttpDelete("{issueId:int}")]
+        [Authorize(Roles = "Dispatcher")]
         public async Task<IActionResult> DeleteIssue(int issueId)
         {
             var userEmail = RetriveEmailFromHttpContext();

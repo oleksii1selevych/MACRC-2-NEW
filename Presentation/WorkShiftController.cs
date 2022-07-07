@@ -33,6 +33,7 @@ namespace Marc2.Presentation
             await _services.WorkShiftService.EndWorkShiftAsync(userEmail);
             return Ok();
         }
+        [Authorize(Roles = "Dispatcher")]
 
         [HttpGet("allAvailible")]
         public async Task<IActionResult> GetAllAvalibleWorkShifts(int accidentId)
@@ -42,6 +43,7 @@ namespace Marc2.Presentation
             return Ok(workShiftDtos);
         }
         [HttpGet("byAccident")]
+        [Authorize(Roles = "Dispatcher")]
         public async Task<IActionResult> GetAllWorkShiftsByAccident(int accidentId)
         {
             var userEmail = RetriveEmailFromHttpContext();
